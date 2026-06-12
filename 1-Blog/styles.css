@@ -1,0 +1,38 @@
+body {
+    background-color: #374151;
+}
+
+.header_item {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF
+}
+
+.topic, .date, .profession {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF
+}
+
+.author, .extra_text, .copyright {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF
+}
+
+.main_text {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF
+}
+
+.title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFFFFF
+}

@@ -2,7 +2,8 @@ div {
     background-color: #FFFEFE;
 }
 
-h1, input {
+h1,
+input {
     color: #333333;
 }
 
@@ -14,7 +15,8 @@ h1 {
 
 }
 
-p, button {
+p,
+button {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 18px;
@@ -25,12 +27,14 @@ input {
     font-weight: 600;
     font-size: 16px;
 }
-p, label {
+
+p,
+label {
     color: #666666;
 }
 
 a {
-    color:#089FE0;
+    color: #089FE0;
 }
 
 input {
