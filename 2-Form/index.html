@@ -4,20 +4,33 @@
 <head>
     <title>Регистрация</title>
     <link rel="stylesheet" href="styles.css" />
+
 </head>
 
 <body>
-    <div>
+    <div id="container">
         <form action='/' method="post">
-            <h1>Регистрация</h1>
-            <p>Уже есть аккаунт? <a href="#">Войти</a></p>
-            <input type="text" placeholder="Имя пользователя" name="username">
-            <input type="text" placeholder="Имя" name="first_name">
-            <input type="text" placeholder="Фамилия" name="last_name">
-            <input type="email" placeholder="E-mail" name="email">
-            <button type="submit">Зарегистрироваться</button>
-            <input type="checkbox" id="terms" name="terms">
-            <label for="terms">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+            <div id="title">
+                <h1>Регистрация</h1>
+                <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+            </div>
+            <div id="inputs">
+                <div class="input_line">
+                    <input type="text" placeholder="Имя пользователя" name="username">
+                </div>
+                <div class="input_line">
+                    <input type="text" placeholder="Имя" name="first_name">
+                    <input type="text" placeholder="Фамилия" name="last_name">
+                </div>
+                <div class="input_line">
+                    <input type="email" placeholder="E-mail" name="email">
+                </div>
+                <button type="submit">Зарегистрироваться<img src="img/Arrow 1.png" alt="Стрелка вправо"></button>
+                <div class="input_line">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Я прочитал и принимаю <a href="#">Условия использования</a></label>
+                </div>
+            </div>
         </form>
     </div>
 </body>
