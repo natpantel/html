@@ -4,38 +4,51 @@
 <head>
     <title>Блог</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="icon">В</div>
-
-            <ul class="header_menu">
-                <li class="header_item">Мой блог</li>
+            <ul id="header_menu">
+                <li class="header_item">
+                    <div id="icon"><span>В</span></div>Мой блог
+                </li>
                 <li class="header_item">HTML и CSS</li>
                 <li class="header_item">Frontend</li>
                 <li class="header_item">Backend</li>
             </ul>
-            <input placeholder="Поиск" type="text" class="search" id="search">
+            <input placeholder="Поиск" type="text" id="search">
         </nav>
     </header>
     <main>
         <article>
             <header>
-                <div class="tags">
-                    <span class="topic">FRONTEND</span>
-                    <span class="date">12 мая 2024</span>
+                <div id="tags">
+                    <span id="topic">FRONTEND</span>
+                    <span id="date">12 мая 2024</span>
                 </div>
-                <h1 class="title">Теория цвета - Как цвет влияет на поведение потребителей</h1>
-                <div class="author">
+                <h1 id="title">Теория цвета - Как цвет влияет на поведение потребителей</h1>
+                <div id="author">
                     <img src="img/img1.png" alt="Фото автора">
-                    <p class="author_name">Наталья Васильева</p>
-                    <p class="profession">Разработчик</p>
+                    <div id="description">
+                        <p id="author_name">Наталья Васильева</p>
+                        <p id="profession">Разработчик</p>
+                    </div>
+
                 </div>
             </header>
             <img id="main_picture" src="img/img2.png" alt="Иллюстрация">
-            <p class="main_text">Теория цвета — это особенности эмоционального восприятия человеком тех или иных
+            <p id="main_text">Теория цвета — это особенности эмоционального восприятия человеком тех или иных
                 цветовых решений. Цвета и
                 различные их комбинации влияют на психику человека, а значит, во многом определяют его поведение.
                 Маркетологи и веб-дизайнеры хорошо знают, что правильно подобранная цветовая гамма сайта помогает
@@ -43,7 +56,7 @@
                 удержать внимание пользователей, сформировать положительное отношение к продукту, подтолкнуть
                 посетителей к
                 совершению целевых действий, повысить конверсию.</p>
-            <p class="extra_text">Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.
+            <p id="extra_text">Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.
                 Эмоциональная и
                 поведенческая реакция каждого человека зависит от личного опыта. Вместе с тем можно выделить
                 определенные
@@ -56,7 +69,7 @@
         </article>
     </main>
     <footer>
-        <p class="copyright">Все права защищены (c) 2024</p>
+        <p id="copyright">Все права защищены (c) 2024</p>
     </footer>
 </body>
 
