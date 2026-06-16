@@ -1,0 +1,225 @@
+body {
+    --white: #FFFFFF;
+    --light-white: #FFFFFF99;
+    --very_light_white: #FFFFFF29;
+    --light-grey: #4E5D7C80;
+    --black: #000000;
+    --grey: #4E5D7C;
+    --dark_grey: #4E5D7C14;
+    --blue: #357EFE;
+    --green: #1ABC9C;
+    background-color: var(--white);
+    margin: auto;
+}
+
+.tariffs {
+    padding: 80px 0px;
+}
+
+.header__title {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 24px;
+
+}
+
+.header__subtitle {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--light-grey);
+    margin-bottom: 40px;
+
+}
+
+.card__item {
+    height: calc(507px - 48px * 2);
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 32px 0px #4E5D7C29;
+    padding: 48px 40px;
+    border-radius: 8px;
+    display: grid;
+    align-content: space-between;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    width: 1156px;
+    margin: auto;
+}
+
+.card__term {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--black);
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+.card__description {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--light-grey);
+    text-align: left;
+    margin: 0px;
+}
+
+.card__table {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 126px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.card__data {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: var(--grey);
+}
+
+.card__separator {
+    width: 100%;
+    background-color: var(--dark_grey);
+    grid-column: span 2;
+    height: 1px;
+    border: none;
+    margin: 8px 0px;
+}
+
+.card__label {
+    background-color: var(--blue);
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 17px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--white);
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 47px;
+}
+
+.card__benefit {
+    background-color: var(--green);
+    width: 124px;
+    height: 29px;
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--white);
+    text-align: center;
+    line-height: 29px;
+    margin: 0px 0px 16px 0px;
+
+}
+
+.card__discount {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: var(--white);
+}
+
+.card__benefit_empty {
+    visibility: hidden;
+}
+
+.card__data_second {
+    padding: 8px 0px 8px 16px;
+}
+
+.card__data_orange {
+    background-color: #FFC736;
+    color: var(--white);
+    border-radius: 8px;
+    width: max-content;
+    padding-right: 16px;
+}
+
+.card__item_blue {
+    background-color: var(--blue);
+}
+
+.card__item_blue .card__term,
+.card__item_blue .card__data {
+    color: var(--white)
+}
+
+.card__item_blue .card__label {
+    background-color: var(--white);
+    color: var(--blue)
+}
+
+.card__item_blue .card__separator {
+    background-color: var(--very_light_white);
+}
+
+.card__item_blue .card__description {
+    color: var(--light-white)
+}
+
+@media screen and (max-width:1168px) {
+    .cards {
+        grid-template-columns: 1fr;
+
+        width: auto;
+    }
+
+    .header__title {
+        font-size: 36px;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    .header__subtitle {
+        text-align: left;
+        margin-bottom: 48px;
+    }
+
+    .tariffs {
+        margin: 0px 24px 0px 23px;
+    }
+
+    .card__benefit_empty {
+        display: none;
+    }
+
+    .card__item {
+        padding: 48px 24px;
+        height: auto;
+    }
+
+    .card__header {
+        margin-bottom: 32px;
+    }
+
+    .card__table {
+        margin-bottom: 32px;
+    }
+}
